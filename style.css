@@ -5,40 +5,82 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
-body
-{
+
+.main{
     background: url(mountain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #A5B6C3;
-}
-header
-{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding:20px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
-header .name
+
+.main::after
 {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 4em;
+    background: linear-gradient(to top, #001634, transparent 90%);
+
+}
+
+header{
+    padding:20px 100px;
+
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul li{
+    list-style: none;
+    margin-left: 20px;
+    z-index: 10000;
+
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
     color: #fff;
-    font-weight: 615;
+    border-radius: 20px;
+
+}
+
+header ul li a:hover, header ul li a.active {
+    background: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.name-container{
+    padding-top: 170px;
+    
+}
+
+.name{
+    color: #fff;
+    font-weight: 625;
     text-decoration: none;
     font-size: 6em;
     letter-spacing: 2px;
     filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.6));
 
 }
-.name-container{
-    margin: 0 auto;
-}
+
 .social-icons{
     text-align: center;
     padding-top: 10px;
@@ -50,28 +92,19 @@ header .name
     margin: 0 20px;
     filter: drop-shadow(0px 4px 1px rgba(0, 0, 0, 0.6));
 }
-header ul
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 125px;
+
+.about{
+    background: #001634;
+    padding: 100px;
 }
-header ul li
-{
-    list-style: none;
-    margin-left: 20px;
-}
-header ul li a
-{
-    text-decoration: none;
-    padding: 6px 15px;
+
+.about h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
     color: #fff;
-    border-radius: 20px;
 }
-header ul li a:hover,
-header ul li a.active
-{
-    background: #fff;
-    color: rgb(0, 0, 0);
+
+.about p{
+    font-size: 1.5em;
+    color: #fff;
 }
