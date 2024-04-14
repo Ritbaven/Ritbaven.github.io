@@ -4,39 +4,135 @@
         <title>Ricardo A. Ibaven</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="icons/headerIcon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
         <div class="main" id="home">
 
+            <div id="particles-js"></div>
+
+            <!-- Navigation menu -->
             <header>
                 <ul>
-                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="./" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="docs/RICARDO ANDRES IBAVEN RESUME.pdf">Resume</a></li>
-                    <li><a href="#">Personal Interests</a></li>
-                    <li><a href="#">PC</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a target="_blank" href="docs/RICARDO ANDRES IBAVEN RESUME.pdf">Resume</a></li>
+                    <li><a href="./personal-interests">Personal Interests</a></li>
+                    <li><a href="./pc">PC</a></li>
+                    <li><a href="./music">Music</a></li>
+                    <li><a href="./contact">Contact</a></li>
                 </ul>
             </header>
 
+            <!-- Name -->
             <div class="name-container">
                 <a href="#" class="name" id="bigname">Ricardo Ibaven</a>
             </div>
 
+            <!-- Social icons -->
             <div class="social-icons">
-                <a href="https://github.com/Ritbaven"><img src="icons/githubIcon.png" alt="GitHub" class="social-icon"></a>
-                <a href="https://www.linkedin.com/in/ibaven/"><img src="icons/linkedinIcon.png" alt="LinkedIn" class="social-icon"></a>
-                <a href="#"><img src="icons/mailIcon.png" alt="Email" class="social-icon"></a>
+                <a target="_blank" href="https://github.com/Ritbaven"><img src="icons/githubIcon.png" alt="GitHub" class="social-icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ibaven/"><img src="icons/linkedinIcon.png" alt="LinkedIn" class="social-icon"></a>
+                <a target="_blank" href="https://twitter.com/Ritbaven1"><img src="icons/twitterIcon.png" alt="Twitter" class="social-icon"></a>
             </div>
 
         </div>
 
+        <!-- About section -->
         <div class="about" id="about">
             <h2>About</h2>
-            <p>Hi! I'm Ricardo Ibaven, a Junior Computer Science student on a mission to create ways to make people's life better with tech. I enjoy building and learning new things.<br><br>My journey in coding combines a passion for problem-solving, computers, applications, and a drive to learn and grow. Given this drive, when I'm not coding, you'll find me doing <a href="personal-interests.html">other things</a>.</p>
+            <p>Hi! I'm Ricardo Ibaven, a Junior Computer Science student on a mission to create ways to make people's life better with tech. I enjoy building and learning new things.<br><br>My journey in coding combines a passion for problem-solving, computers, applications, and a drive to learn and grow. Given this drive, when I'm not coding, you'll find me doing <a href="personal-interests.html" style="color: #1c91ff;" target="_blank" >other things</a>.</p>
+        </div>
+
+        <!-- BACK TO TOP BUTTON -->
+        <a href="#" class="back-to-top">
+            <span class="material-icons">arrow_upward</span>
+        </a>
+
+        <!-- SCROL DOWN BUTTON -->
+
+        <a href="#about" class="scroll-down">
+            <span class="material-icons">keyboard_arrow_down</span>
+        </a>
+
+        <!-- Particles scripts -->
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <div class="skills-container" id="skills-container">
+
+            <div class="skills-title">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="bars-container" id="bars-container">
+                
+                <div class="skills">
+                    <h2>Java</h2>
+                    <div class="progress-bar">
+                        <div class="java"></div>
+                    </div>
+    
+                    <h2>Python</h2>
+                    <div class="progress-bar">
+                        <div class="python"></div>
+                    </div>
+    
+                    <h2>PHP</h2>
+                    <div class="progress-bar">
+                        <div class="php"></div>
+                    </div>
+    
+                    <h2>HTML</h2>
+                    <div class="progress-bar">
+                        <div class="html"></div>
+                    </div>
+    
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="css"></div>
+                    </div>
+    
+                    <h2>JavaScript</h2>
+                    <div class="progress-bar">
+                        <div class="javascript"></div>
+                    </div>
+    
+                    <h2>bash</h2>
+                    <div class="progress-bar">
+                        <div class="bash"></div>
+                    </div>
+    
+                    <h2>Kotlin</h2>
+                    <div class="progress-bar">
+                        <div class="kotlin"></div>
+                    </div>
+    
+                    <h2>XML</h2>
+                    <div class="progress-bar">
+                        <div class="xml"></div>
+                    </div>
+                </div>
+    
+            </div>
+
         </div>
 
     </body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-me" id="contact-me">
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="social-icons">
+                <a target="_blank" href="https://github.com/Ritbaven"><img src="icons/githubIcon.png" alt="GitHub" class="social-icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/ibaven/"><img src="icons/linkedinIcon.png" alt="LinkedIn" class="social-icon"></a>
+                <a target="_blank" href="https://twitter.com/Ritbaven1"><img src="icons/twitterIcon.png" alt="Twitter" class="social-icon"></a>
+                <a target="_blank" href="docs/RICARDO ANDRES IBAVEN RESUME.pdf"><img src="icons/cvIcon.png" alt="CV" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
 </html>
