@@ -46,9 +46,18 @@
         </div>
 
         <!-- BACK TO TOP BUTTON -->
-        <a href="./" class="back-to-top">
+        <a class="back-to-top">
             <span class="material-icons">arrow_upward</span>
         </a>
+
+        <script>
+            document.querySelector('.back-to-top').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
 
         <!-- SCROL DOWN BUTTON -->
 

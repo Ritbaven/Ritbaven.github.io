@@ -129,6 +129,7 @@ header ul li a:hover, header ul li a.active {
 
 /* Back to top button*/
 .back-to-top{
+    cursor: pointer;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
