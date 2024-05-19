@@ -192,12 +192,18 @@ header ul li a:hover, header ul li a.active {
 /* Footer */
 footer{
     padding: 10px;
-    background-color: #5785b3;
+    background-color: #1b1b1b;
     z-index: 1000000;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: center; /* Distribute items along the main axis */
+    align-items: center; /* Center items along the cross axis */
+}
+
 .contact-me{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     margin-bottom: 10px;
     color: #fff;
@@ -206,6 +212,19 @@ footer{
     align-items: center;
     filter: drop-shadow(0px 4px 1px rgba(0, 0, 0, 0.6));
 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    /* margin: 0 5px; Add some spacing between social icons */
+    width: 25px; /* Set the width of the social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
 }
 
 /* PROGRESS BARS */
@@ -331,7 +350,7 @@ footer{
 
 @keyframes html{
     100%{
-        width: 35%;
+        width: 40%;
     }
 }
 
@@ -343,7 +362,7 @@ footer{
 
 @keyframes javascript{
     100%{
-        width: 19%;
+        width: 37%;
     }
 }
 

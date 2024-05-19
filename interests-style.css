@@ -10,8 +10,8 @@
 
 .main{
     background: linear-gradient(#001634, #a9b9c8);
-    height: 100vh;
     width: 100%;
+    background-attachment: fixed;
 }
 
 header{
