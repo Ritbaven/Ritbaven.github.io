@@ -35,19 +35,27 @@
 }
 
 header{
-    padding:20px 100px;
+    padding:0.9vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    z-index: 10000000;
+    backdrop-filter: blur(8px);
 }
 
 ul{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    z-index: 2;
 }
 
 ul li{
     list-style: none;
     margin-left: 20px;
+    font-size: 14px;
     z-index: 10000;
 
 }
@@ -55,18 +63,35 @@ ul li{
 ul li a{
     text-decoration: none;
     padding: 6px 15px;
-    color: #fff;
+    color: rgb(200,200,200);
     border-radius: 20px;
 
 }
 
-header ul li a:hover, header ul li a.active {
+header ul li a.active {
     background: #fff;
     color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header ul li a.active:hover {
+    color: black;
+}
+
+header ul li a:hover {
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.hdrimage {
+    width: 32px; /* Set the width of the social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px;
+
 }
 
 .name-container{
-    padding-top: 170px;
+    padding-top: 32vh;
     
 }
 
@@ -105,7 +130,6 @@ header ul li a:hover, header ul li a.active {
 
 }
 
-
 .about h2{
     font-size: 2.5em;
     font-weight: 500;
@@ -136,30 +160,27 @@ header ul li a:hover, header ul li a.active {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background: rgba(0, 0, 0, 0.65);
     border-radius: 0.5rem;
     padding: 0.5rem;
     text-decoration: none;
     transition: 0.2s ease-out;
     z-index: 100000;
+    backdrop-filter: blur(8px);
+
 }
 
 .back-to-top span{
-    color: #001634;
+    color: rgb(200,200,200);
     font-size: 2rem;
     transition: 0.2s ease-out;
-
 }
 
-.back-to-top:hover{
-    background-color:#b3cbe6;
-}
 
 .back-to-top:hover span{
+    color: white;
     transform: translateY(-4px);
     filter: drop-shadow(0px 4px 1px rgba(0, 0, 0, 0.6));
-
-
 }
 
 /* Scroll down button */
@@ -200,11 +221,12 @@ footer{
     display: flex;
     justify-content: center; /* Distribute items along the main axis */
     align-items: center; /* Center items along the cross axis */
+    flex-direction: column;
 }
 
 .contact-me{
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 100;
     margin-bottom: 10px;
     color: #fff;
     display: flex;
@@ -222,45 +244,51 @@ footer{
 
 .social-icon {
     /* margin: 0 5px; Add some spacing between social icons */
-    width: 25px; /* Set the width of the social icons */
+    width: 38px; /* Set the width of the social icons */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px;
 }
 
 /* PROGRESS BARS */
 .skills-container{
-    padding: 50px;
-    background-color: #1b1b1b;
+    padding: 20px;
+    background-color: #eeeeee;
     align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .bars-container{
-    background-color: #1b1b1b;
-    width: 100%;
+    background-color: #eeeeee;
+    width: 80vw;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline-style: solid;
+    border-radius: 2rem;
+    padding-bottom: 4rem;
 }
 
 .skills-title{
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-top: 40px;
     margin-bottom: 5px;
-    color: #fff;
-    font-size: 16px;
+    color: black;
+    font-size: 20px;
     text-align: center;
 }
 
 .skills h2{
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-top: 40px;
     margin-bottom: 5px;
-    color: #fff;
-    font-size: 16px;
+    color: black;
+    font-size: 20px;
 }
 
 .progress-bar{

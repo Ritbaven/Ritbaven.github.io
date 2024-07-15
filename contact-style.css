@@ -15,8 +15,14 @@
 }
 
 header{
-    padding:20px 100px;
-
+    padding:0.9vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    z-index: 10000000;
+    backdrop-filter: blur(8px);
 }
 
 ul{
@@ -29,6 +35,7 @@ ul{
 ul li{
     list-style: none;
     margin-left: 20px;
+    font-size: 14px;
     z-index: 10000;
 
 }
@@ -36,12 +43,44 @@ ul li{
 ul li a{
     text-decoration: none;
     padding: 6px 15px;
-    color: #fff;
+    color: rgb(200,200,200);
     border-radius: 20px;
 
 }
 
-header ul li a:hover, header ul li a.active {
+header ul li a.active {
     background: #fff;
     color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header ul li a.active:hover {
+    color: black;
+}
+
+header ul li a:hover {
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.hdrimage {
+    width: 32px; /* Set the width of the social icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px;
+}
+
+.sec{
+    padding: 100px;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.6));
+}
+.sec h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
 }
