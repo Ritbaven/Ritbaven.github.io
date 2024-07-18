@@ -9,7 +9,7 @@
 }
 
 .main{
-    /* background: url(mountain.jpg); */
+    background: url(earth-sunrise.jpg);
     /* background-color: #1b1b1b; */
     width: 100%;
     height: 100vh;
@@ -33,21 +33,6 @@
     height: 4em;
     background: linear-gradient(to top, black, transparent 90%);
 
-}
-
-.back-video {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-@media (max-aspect-ratio: 16/9){
-    .back-video{
-        width: auto;
-        height: 100%;
-    }
 }
 
 header{
