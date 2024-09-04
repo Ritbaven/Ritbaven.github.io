@@ -9,7 +9,7 @@
     }
 
     .main{
-        background: linear-gradient(#000000, #3b3b3b);
+        background: linear-gradient(#3b3b3b, #000000);
         width: 100%;
         background-attachment: fixed;
     }
@@ -89,4 +89,5 @@
     .sec img{
         margin: auto;
         display: block;
+        border-radius: 20px;
     }
