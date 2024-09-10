@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 100%, 68%);
+  flex-direction: column; /* Stack elements vertically */
+}
+
+#title {
+  /* Remove position: absolute */
+  top: 10px; /* Adjust top for desired positioning, not required with flexbox */
+  left: 50%; /* Not required with flexbox */
+  background-color: inherit; /* Inherit background color from body */
+  color: rgb(0, 0, 0);
+  padding: 25px;
+  font-size: 3em;
+  align-content: center;
+  font-weight: 500;
+  font-family: Helvetica;
+}
+
+#clicktostart {
+  /* Remove position: absolute */
+  top: 100px; /* Adjust top for desired positioning, not required with flexbox */
+  left: 50%; /* Not required with flexbox */
+  background-color: inherit; /* Inherit background color from body */
+  color: rgb(0, 0, 0);
+  padding: 25px;
+  font-size: 3ex;
+  align-content: center;
+  font-weight: 600;
+  font-family: Helvetica;
+  stroke: #bb10b2;
+}
+
+#canvas1 {
+  width: 800px;
+  height: 500px;
+  border: 5px solid black;
+  position: relative;
+  border-radius: 0.3in;
+}
+.button {
+    background-color: #bb10b2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0.1in;
+    margin-top: 60px;
+}
+
+#restartButton {
+  background-color: #bb10b2; /* Green color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0.1in;
+  cursor: pointer;
+  float: right; /* Move the button to the right side */
+  margin-bottom: 10px;
+}
+
+
+

@@ -265,7 +265,7 @@ footer{
 /* PROGRESS BARS */
 .skills-container{
     padding: 20px;
-    background-color: #eeeeee;
+    background-color: white;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -275,7 +275,7 @@ footer{
 }
 
 .bars-container{
-    background-color: #eeeeee;
+    background-color: white;
     width: 80vw;
     height: 100%;
     display: flex;
