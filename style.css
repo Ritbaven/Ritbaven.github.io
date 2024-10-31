@@ -333,6 +333,12 @@ footer{
 
 }
 
+.c{
+    background: #4166da;
+    animation: python 1s linear forwards;
+
+}
+
 .php{
     background: #00bcd4;
     animation: php 1s linear forwards;
@@ -384,6 +390,12 @@ footer{
 @keyframes python{
     100%{
         width: 53%;
+    }
+}
+
+@keyframes c{
+    100%{
+        width: 51%;
     }
 }
 
